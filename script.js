@@ -8,6 +8,8 @@ class ProductProperties {
     // Method to calculate total value of the product
     totalValue() {
         return this.price * this.quantity;
+    }
+    toString() {
         //Returns a string representation of the product
         return `${this.name} - Price: $${this.price}, Quantity: ${this.quantity}, Total Value: $${this.totalValue()}`;  
     }
