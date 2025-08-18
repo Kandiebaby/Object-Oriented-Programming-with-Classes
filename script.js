@@ -23,3 +23,16 @@ console.log(`Total value of: $${totalValue}`);
 //Logging the string representation of the product
 const productInfo = apple.toString();
 console.log(productInfo);
+
+//Creating a subclass for Perishable products properties
+class PerishableProduct extends ProductProperties {
+    constructor(name, price, quantity, expirationDate) {
+        super(name, price, quantity);
+        this.expirationDate = expirationDate;
+    }
+    
+    // Overriding the toString method to include expiration date
+    toString() {
+        return `${super.toString()}, Expiration Date: ${this.expirationDate}`;
+    }
+}
