@@ -36,3 +36,9 @@ class PerishableProduct extends ProductProperties {
         return `${super.toString()}, Expiration Date: ${this.expirationDate}`;
     }
 }
+//Creating an instance of PerishableProduct
+const milk = new PerishableProduct('Milk', 1.50, 10, '2024-12-31');
+//Logging the total value of the perishable product 
+console.log(`Total value of perishable product: $${milk.totalValue()}`);
+//Logging the string representation of the perishable product
+console.log(milk.toString());
