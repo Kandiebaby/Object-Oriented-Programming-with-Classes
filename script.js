@@ -42,3 +42,10 @@ const milk = new PerishableProduct('Milk', 1.50, 10, '2024-12-31');
 console.log(`Total value of perishable product: $${milk.totalValue()}`);
 //Logging the string representation of the perishable product
 console.log(milk.toString());
+
+//Creating second istance of perishable product
+const bread = new PerishableProduct('Bread', 3.00, 20, '2024-11-15');
+//Logging the total value of the second perishable product
+console.log(`Total value of perishable product: $${bread.totalValue()}`);
+//Logging the string representation of the second perishable product
+console.log(bread.toString());
