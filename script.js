@@ -77,5 +77,8 @@ class Store {
         this.inventory = [];
     }
 
-    
+// Method to add a product to the inventory
+addProduct(product) {
+    this.inventory.push(product);
+}
 }
