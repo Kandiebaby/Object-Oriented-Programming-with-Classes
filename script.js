@@ -81,4 +81,16 @@ class Store {
 addProduct(product) {
     this.inventory.push(product);
 }
+
+// Method to get Inventory 
+getInventoryValue() {
+    let totalValue = 0;
+    this.inventory.forEach(product => {
+        totalValue += product.getTotalValue();
+    });
+
+    return totalValue;
+}
+
+
 }
