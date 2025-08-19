@@ -103,3 +103,14 @@ findProductByName(name) {
 }
 
 }
+
+// Testing the System 
+
+//Create products
+const banana = new ProductProperties('banana' , 2.00, 10);
+const orange = new ProductProperties('orange', 2.50, 15);
+const kiwi = new ProductProperties('kiwi' , 3.00, 5);
+const Yogurt = new PerishableProduct('Yogurt', 3.00, 20, '2024-12-28');
+const Cheese = new PerishableProduct('Cheese', 5.00, 15, '2024-11-20');
+
+
