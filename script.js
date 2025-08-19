@@ -86,7 +86,7 @@ addProduct(product) {
 getInventoryValue() {
     let totalValue = 0;
     this.inventory.forEach(product => {
-        totalValue += product.getTotalValue();
+        totalValue += product.totalValue();
     });
 
     return totalValue;
@@ -121,4 +121,8 @@ myStore.addProduct(orange);
 myStore.addProduct(kiwi);
 myStore.addProduct(Yogurt);
 myStore.addProduct(Cheese);
+
+//Inventory value before discount
+console.log("Total Inventory Value before discount: $", myStore.getInventoryValue());
+
 
