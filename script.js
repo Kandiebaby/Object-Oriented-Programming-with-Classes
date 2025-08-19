@@ -13,7 +13,15 @@ class ProductProperties {
         //Returns a string representation of the product
         return `${this.name} - Price: $${this.price}, Quantity: ${this.quantity}, Total Value: $${this.totalValue()}`;  
     }
+
+    // Static method to calculate discount
+    static applyDiscount(product, discount) {
+        // Returns the price after applying the discount percentage
+        return product.price -= (product.price * (discount / 100));
+    }
 }
+
+
 //Creating an instance of ProductProperties
 const apple = new ProductProperties('Apple', 2.50, 50);
 
@@ -49,3 +57,5 @@ const bread = new PerishableProduct('Bread', 3.00, 20, '2024-11-15');
 console.log(`Total value of perishable product: $${bread.totalValue()}`);
 //Logging the string representation of the second perishable product
 console.log(bread.toString());
+
+
