@@ -114,3 +114,11 @@ const Yogurt = new PerishableProduct('Yogurt', 3.00, 20, '2024-12-28');
 const Cheese = new PerishableProduct('Cheese', 5.00, 15, '2024-11-20');
 
 
+//Add products to store 
+const myStore = new Store();
+myStore.addProduct(banana);
+myStore.addProduct(orange);
+myStore.addProduct(kiwi);
+myStore.addProduct(Yogurt);
+myStore.addProduct(Cheese);
+
