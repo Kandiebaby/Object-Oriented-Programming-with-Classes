@@ -91,6 +91,15 @@ getInventoryValue() {
 
     return totalValue;
 }
-
+//Method to find product by name
+findProductByName(name) {
+    let foundProduct = null;
+    this.inventory.forEach(product => {
+        if (product.name === name) {
+            foundProduct = product;
+        }
+    });
+    return foundProduct;
+}
 
 }
