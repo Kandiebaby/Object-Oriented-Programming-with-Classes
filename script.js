@@ -65,3 +65,8 @@ products.forEach(product => {
     ProductProperties.applyDiscount(product, 10);
 });
 
+//logging the products after applying discount 
+console.log("After applying 10% discount:");
+products.forEach(product => {
+    console.log(product.toString());
+});
