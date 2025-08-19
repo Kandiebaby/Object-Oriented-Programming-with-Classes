@@ -60,7 +60,7 @@ console.log(bread.toString());
 
 
 //Array of Products 
-const products = [apple, milk, bread];
+const products = [milk, bread];
 products.forEach(product => {
     ProductProperties.applyDiscount(product, 10);
 });
