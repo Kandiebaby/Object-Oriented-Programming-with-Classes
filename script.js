@@ -126,3 +126,7 @@ myStore.addProduct(Cheese);
 console.log("Total Inventory Value before discount: $", myStore.getInventoryValue());
 
 
+
+// Apply 15% discount and print total after
+myStore.inventory.forEach(product => ProductProperties.applyDiscount(product, 15));
+console.log("Total Inventory Value after 15% discount: $", myStore.getInventoryValue());
