@@ -70,3 +70,12 @@ console.log("After applying 10% discount:");
 products.forEach(product => {
     console.log(product.toString());
 });
+
+//Store Class Properties Inventory 
+class Store {
+    constructor () {
+        this.inventory = [];
+    }
+
+    
+}
